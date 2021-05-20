@@ -9,7 +9,7 @@
       {% if fmt_name == default_format %}
         {{ layout.head_icon(from_base(format_base), "View as " ~ fmt.label, fmt.icon) }}
       {% else %}
-        {{ layout.head_icon(from_base(format_prefix, fmt_name, format_base), "View as " ~ fmt.label, fmt.icon) }}
+        {{ layout.head_icon(from_base("/format", fmt_name, format_base), "View as " ~ fmt.label, fmt.icon) }}
       {% endif %}
     {% endif %}
   {% endfor %}
